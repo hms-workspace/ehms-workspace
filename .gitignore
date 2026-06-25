@@ -1,0 +1,50 @@
+# Ignore files generated during build
+target/
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.classpath
+.project
+.settings/
+*.iml
+.factorypath
+
+# Node/npm
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# Vaadin
+frontend/generated/
+vite.config.ts.timestamp-*.mjs
+
+# Build outputs
+build/
+dist/
+*.class
+*.jar
+*.war
+
+# Environment
+.env
+.env.local
+*.properties.local
+
+# Logs
+*.log
+logs/
+
+# Misc
+.gradle/
+/.gradle/
+.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# OS specific
+Thumbs.db

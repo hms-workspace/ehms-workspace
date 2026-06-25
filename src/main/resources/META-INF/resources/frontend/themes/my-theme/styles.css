@@ -1,0 +1,52 @@
+/* Custom Theme Styles */
+
+:root {
+  --primary-color: #3f51b5;
+  --primary-dark: #303f9f;
+  --accent-color: #ff4081;
+  --light-bg: #fafafa;
+  --dark-bg: #303030;
+}
+
+/* Layout styles */
+.nav-scroller {
+  height: 100%;
+}
+
+/* View styles */
+.home-view {
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-view {
+  width: 100%;
+}
+
+.settings-view {
+  width: 100%;
+}
+
+/* Component styles */
+[theme~="dark"] {
+  --lumo-base-color: var(--dark-bg);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--lumo-font-size-m);
+  }
+}
+
+/* Custom button styles */
+vaadin-button {
+  --lumo-primary-color: var(--primary-color);
+}
+
+/* Custom form field styles */
+vaadin-text-field,
+vaadin-email-field,
+vaadin-password-field {
+  width: 100%;
+}
